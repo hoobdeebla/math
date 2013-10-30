@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>Distancer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css">
+    <link rel="stylesheet" href="css/math.css">
+    <style>
+      body {background: url("img/squairy_light.png");}
+      .form-control {width: 10%;}
+      #result {
+        top: 45%;
+        position: absolute;
+        left: 40%;
+        width: 20%;
+        font-size: 84px;
+      }
+      #onex {left: 25%;}
+      #oney {left: 37.5%;}
+      #twox {left: 52.5%;}
+      #twoy {left: 65%;}
+    </style>
+  </head>
+  <body ng-controller="DistCtrl">
+    <h1>Distance Between Two Points</h1>
+    <h2>Find the distance “as the crow flies”</h2>
+    <input type="number" id="onex" class="form-control" ng-model="onex" min="-999" max="999" placeholder="x1"></input>
+    <input type="number" id="oney" class="form-control" ng-model="oney" min="-999" max="999" placeholder="y1"></input>
+    <input type="number" id="twox" class="form-control" ng-model="twox" min="-999" max="999" placeholder="x2"></input>
+    <input type="number" id="twoy" class="form-control" ng-model="twoy" min="-999" max="999" placeholder="y2"></input>
+    <div id="result">{{Math.sqrt(Math.pow(Math.abs(twoy - oney), 2) + Math.pow(Math.abs(twox - onex), 2)) | number:2}}</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script>function DistCtrl($scope) {$scope.Math = Math;}</script>
+  </body>
+</html>
