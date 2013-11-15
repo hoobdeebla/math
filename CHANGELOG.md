@@ -1,5 +1,11 @@
 # Changelog #
 
+**14 November 2013:**
+
+* Updated to Bootstrap 3.0.2
+* Updated to Font Awesome 4.0.3
+* Updated to AngularJS 1.2.0
+
 **1 November 2013:**
 
 * Updated to Bootstrap 3.0.1
