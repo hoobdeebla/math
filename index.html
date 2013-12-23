@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Math Toolbelt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <style>
@@ -49,20 +49,20 @@
       <iframe id="quadFrame" src="quad.html" seamless></iframe>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function(){
-        $(".navbar-toggle").click(function(){
-          $(this).toggleClass("fa-caret-square-o-down");
-          $(this).toggleClass("fa-caret-square-o-up");
+        $('.navbar-toggle').click(function(){
+          $(this).toggleClass('fa-caret-square-o-down');
+          $(this).toggleClass('fa-caret-square-o-up');
         });
-        $("iframe").hide();
-        $("#carbFrame").show();
-        $(".nav a").click(function(){
-          $("iframe").fadeOut(1000).delay(1000);
-          $(".active").removeClass("active");
-          $("#"+this.id+"Frame").fadeIn(1000);
-          $(this).parent().addClass("active");
+        $('iframe').hide();
+        $('#carbFrame').show();
+        $('.nav a').click(function(){
+          $('iframe').fadeOut(1000).delay(1000);
+          $('.active').removeClass('active');
+          $('#'+this.id+'Frame').fadeIn(1000);
+          $(this).parent().addClass('active');
         });
       });
     </script>

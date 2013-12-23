@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Distancer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/math.css">
     <style>
       body {background: url("img/squairy_light.png");}
@@ -30,7 +30,7 @@
     <input type="number" id="twox" class="form-control" ng-model="twox" min="-999" max="999" placeholder="x2"></input>
     <input type="number" id="twoy" class="form-control" ng-model="twoy" min="-999" max="999" placeholder="y2"></input>
     <div id="result">{{Math.sqrt(Math.pow(Math.abs(twoy - oney), 2) + Math.pow(Math.abs(twox - onex), 2)) | number:2}}</div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
     <script>function DistCtrl($scope) {$scope.Math = Math;}</script>
   </body>
 </html>

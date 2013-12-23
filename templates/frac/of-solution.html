@@ -1,0 +1,7 @@
+<h3>Solution:</h3>
+<div ng-if="k % n === 0">The first step is to partition <sup>k</sup>⁄<sub>l</sub> (<sup>{{k}}</sup>⁄<sub>{{l}}</sub>) into n ({{n}}) equal parts, which is <sup>k ÷ n</sup>⁄<sub>l</sub> (<sup>{{k / n}}</sup>⁄<sub>{{l}}</sub>). Then, concatenate m ({{m}}) of these parts.</div>
+<div ng-if="k % n !== 0">
+  The first step is to partition <sup>k</sup>⁄<sub>l</sub> (<sup>{{k}}</sup>⁄<sub>{{l}}</sub>) into n ({{n}}) equal parts, but we can't, so we must force <sup>k</sup>⁄<sub>l</sub> (<sup>{{k}}</sup>⁄<sub>{{l}}</sub>) into being able to be split into n ({{n}}) equal parts.
+  In order to do that, we must use equivalent fractions to make k ({{k}}) into a multiple of n ({{n}}): <sup>k</sup>⁄<sub>l</sub> = <sup>k × n</sup>⁄<sub>l × n</sub> = <sup>kn</sup>⁄<sub>ln</sub> (<sup>k</sup>⁄<sub>l</sub> = <sup>{{k}} × {{n}}</sup>⁄<sub>{{l}} × {{n}}</sub> = <sup>{{k * n}}</sup>⁄<sub>{{l * n}}</sub>).
+  The next step is to split this fraction into n ({{n}}) equal parts, which makes each equal part have a value of <sup>k</sup>⁄<sub>ln</sub> (<sup>{{k}}</sup><sub>{{l * n}}</sub>). All that is left is to concatenate m ({{m}}) of these parts.
+</div>
