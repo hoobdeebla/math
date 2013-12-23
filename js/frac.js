@@ -17,73 +17,73 @@ angular.module('frac', [])
   .directive('ofDescription', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-of-description.html'
+      templateUrl: 'templates/frac-of-description.html'
     };
   })
   .directive('ofExplanation', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-of-explanation.html'
+      templateUrl: 'templates/frac-of-explanation.html'
     };
   })
   .directive('ofSolution', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-of-solution.html'
+      templateUrl: 'templates/frac-of-solution.html'
     };
   })
   .directive('ofAnswer', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-of-answer.html'
+      templateUrl: 'templates/frac-of-answer.html'
     };
   })
   .directive('addDescription', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-add-description.html'
+      templateUrl: 'templates/frac-add-description.html'
     };
   })
   .directive('addExplanation', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-add-explanation.html'
+      templateUrl: 'templates/frac-add-explanation.html'
     };
   })
   .directive('addSolution', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-add-solution.html'
+      templateUrl: 'templates/frac-add-solution.html'
     };
   })
   .directive('addAnswer', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-add-answer.html'
+      templateUrl: 'templates/frac-add-answer.html'
     };
   })
   .directive('minusDescription', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-minus-description.html'
+      templateUrl: 'templates/frac-minus-description.html'
     };
   })
   .directive('minusExplanation', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-minus-explanation.html'
+      templateUrl: 'templates/frac-minus-explanation.html'
     };
   })
   .directive('minusSolution', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-minus-solution.html'
+      templateUrl: 'templates/frac-minus-solution.html'
     };
   })
   .directive('minusAnswer', function () {
     return {
       restrict: 'E',
-      templateUrl: '../templates/frac-minus-answer.html'
+      templateUrl: 'templates/frac-minus-answer.html'
     };
   });
 
