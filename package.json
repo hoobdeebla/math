@@ -1,15 +1,28 @@
 {
   "name": "math-toolbelt",
-  "version": "0.0.0",
+  "private": true,
   "description": "Helpful math tools based on high school math",
   "author": "Adam Schay (https://github.com/hoobdeebla)",
-  "contributors": "Matthew Martori (https://github.com/matttt)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hoobdeebla/math.git"
-  },
+  "contributors": [
+    "Matthew Martori (https://github.com/matttt)"
+  ],
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-connect": "~0.5.0"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-semistandard": "^15.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-config-standard-jsx": "^8.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.21.0",
+    "eslint-plugin-mdx": "^1.7.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "finalhandler": "^1.1.2",
+    "serve-static": "^1.14.1"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
