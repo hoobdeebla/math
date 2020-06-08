@@ -1,11 +1,27 @@
 {
   "name": "math-toolbelt",
   "private": true,
-  "description": "Helpful math tools based on high school math",
+  "description": "Helpful math tools based on high school math concepts",
   "author": "Adam Schay (https://github.com/hoobdeebla)",
   "contributors": [
     "Matthew Martori (https://github.com/matttt)"
   ],
+  "dependencies": {
+    "@mdx-js/mdx": "^2.0.0-next.1",
+    "@mdx-js/react": "^2.0.0-next.1",
+    "bootstrap": "^4.5.0",
+    "gatsby": "^2.23.1",
+    "gatsby-plugin-manifest": "^2.4.10",
+    "gatsby-plugin-mdx": "^1.2.14",
+    "gatsby-plugin-offline": "^3.2.8",
+    "gatsby-plugin-react-helmet": "^3.3.3",
+    "gatsby-source-filesystem": "^2.3.10",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
@@ -18,11 +34,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "finalhandler": "^1.1.2",
-    "serve-static": "^1.14.1"
-  },
-  "scripts": {
-    "start": "node server.js"
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
