@@ -43,7 +43,7 @@ const Layout = ({ children, title }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.object) || PropTypes.object.isRequired,
+  children: PropTypes.object.isRequired,
   title   : PropTypes.string,
 };
 
