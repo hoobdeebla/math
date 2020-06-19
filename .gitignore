@@ -1,3 +1,9 @@
+# editor
+.vscode/
+
+# npm
 node_modules/
+
+# gatsby
 .cache/
 public/
