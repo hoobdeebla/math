@@ -7,6 +7,7 @@
     "Matthew Martori (https://github.com/matttt)"
   ],
   "dependencies": {
+    "asciimath2tex": "^1.1.0",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.23.4",
     "gatsby-plugin-manifest": "^2.4.11",
@@ -14,10 +15,12 @@
     "gatsby-plugin-react-helmet": "^3.3.4",
     "gatsby-source-filesystem": "^2.3.11",
     "jquery": "^3.5.1",
+    "katex": "^0.11.1",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-latex": "^1.6.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
