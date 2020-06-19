@@ -1,10 +1,12 @@
 import React  from 'react';
 import Latex  from 'react-latex';
+import Round  from '../utils/round';
 import Layout from '../components/layout';
 
 import DistAnswers from '../answers/dist';
 
 const title = 'Distancer';
+
 
 const Distancer = () => {
   const [X1, setX1] = React.useState('');
@@ -60,7 +62,7 @@ const Distancer = () => {
             Points: {`(${X1}, ${Y1}), (${X2}, ${Y2})`}
           </h3>
           <h3 className='col-12'>
-            Answer: {Number(Math.sqrt(Math.pow(X2 - X1, 2) + Math.pow(Y2 - Y1, 2))).toFixed(2)}
+            Answer: {Round(Math.sqrt(Math.pow(X2 - X1, 2) + Math.pow(Y2 - Y1, 2)), 2)}
           </h3>
           <div className='col-12'>
             <button type='button' className='btn btn-lg btn-light m-3' data-toggle='modal' data-target='#results'>View more detailed results</button>

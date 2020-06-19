@@ -1,4 +1,5 @@
 import React  from 'react';
+import Round  from '../utils/round';
 import Layout from '../components/layout';
 
 const title = 'Pythagorifier';
@@ -14,11 +15,11 @@ const Pyth = () => {
     const bb = Math.pow(C, 2) - Math.pow(A, 2);
     const aa = Math.pow(C, 2) - Math.pow(B, 2);
     if (!A && B && C) {
-      setA((Math.round(Math.sqrt(aa) * 100) / 100));
+      setA(Round(Math.sqrt(aa), 2));
     } else if (A && !B && C) {
-      setB((Math.round(Math.sqrt(bb) * 100) / 100));
+      setB(Round(Math.sqrt(bb), 2));
     } else if (A && B && !C) {
-      setC((Math.round(Math.sqrt(cc) * 100) / 100));
+      setC(Round(Math.sqrt(cc), 2));
     }
   };
 

@@ -1,7 +1,9 @@
 import React  from 'react';
+import Round  from '../utils/round';
 import Layout from '../components/layout';
 
 const title = 'Carbon Counts';
+
 
 const CarbonCounts = () => {
   const [price, setPrice] = React.useState(2.25);
@@ -41,8 +43,8 @@ const CarbonCounts = () => {
 
         <div className='row'>
           <p className='col-12 pt-4 lead'>
-            A car that gets {mpg} mpg will take {Number(dist / mpg).toFixed(2)} gallons of gas to drive {dist} miles, which will cost about ${Number(dist / mpg * price).toFixed(2)}.
-            The journey will emit {Number(dist / mpg * 19.4).toFixed(2)} pounds of carbon. It would take {Number(dist / mpg * 19.4 / 13).toFixed(2)} years for one healthy tree to clean the carbon from the air.
+            A car that gets {mpg} mpg will take {Round((dist / mpg), 2)} gallons of gas to drive {dist} miles, which will cost about ${Round((dist / mpg * price), 2)}.
+            The journey will emit {Round((dist / mpg * 19.4), 2)} pounds of carbon. It would take {Round((dist / mpg * 19.4 / 13), 2)} years for one healthy tree to clean the carbon from the air.
           </p>
         </div>
       </div>

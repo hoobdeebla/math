@@ -1,9 +1,9 @@
-import React from 'react';
-import Latex from 'react-latex';
+import React  from 'react';
+import Latex  from 'react-latex';
+import Round  from '../utils/round';
+import Format from '../utils/format';
 
 import PropTypes from 'prop-types';
-
-import Format from '../utils/format';
 
 
 const Answers = ({ X1, Y1, X2, Y2 }) => (
@@ -18,7 +18,7 @@ const Answers = ({ X1, Y1, X2, Y2 }) => (
 
     <Latex displayMode>{Format(`d = sqrt(${Math.pow((X2 - X1), 2) + Math.pow((Y2 - Y1), 2)})`)}</Latex>
     {/* TODO display the simplified radical in addition to the unsimplified one above and the approximate calculation below */}
-    <Latex displayMode>{Format(`d approx ${Math.sqrt((Math.pow((X2 - X1), 2) + Math.pow((Y2 - Y1), 2)))}`)}</Latex>
+    <Latex displayMode>{Format(`d approx ${Round(Math.sqrt(Math.pow((X2 - X1), 2) + Math.pow((Y2 - Y1), 2)), 2)}`)}</Latex>
   </>
 );
 
