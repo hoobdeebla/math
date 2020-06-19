@@ -1,6 +1,6 @@
 module.exports = {
   parser : 'babel-eslint',
-  extends: ['semistandard', 'standard-react', 'react-app', 'plugin:mdx/recommended'],
+  extends: ['semistandard', 'standard-react', 'react-app'],
   rules  : {
     'arrow-parens'                   : ['error', 'always'],
     'comma-dangle'                   : ['error', 'always-multiline'],

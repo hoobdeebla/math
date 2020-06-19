@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title      : 'Math Toolbelt',
-    description: 'Helpful math tools based on high school math',
+    description: 'Helpful math tools based on high school math concepts',
     author     : 'Adam Schay (https://github.com/hoobdeebla) and Matthew Martori (https://github.com/matttt)',
   },
   plugins: [
@@ -12,7 +12,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    'gatsby-plugin-mdx',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',

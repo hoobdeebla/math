@@ -12,7 +12,7 @@ const Layout = ({ children, title }) => {
       <SEO title={Title} />
       <header className='navbar navbar-expand-md navbar-dark bg-dark p-2 p-md-0 mb-3 sticky-top'>
         <div className='container'>
-          <Link to='/' className='navbar-brand mb-0 h1' isCurrent>Math Toolbelt</Link>
+          <Link to='/' className='navbar-brand mb-0 h1'>Math Toolbelt</Link>
           <div className='float-md-right'>
             <nav id='navbarNav' className='collapse navbar-collapse navbar-nav text-center'>
               <NavLink place='/carb/' text='Carbon Counts' />
