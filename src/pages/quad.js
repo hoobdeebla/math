@@ -1,6 +1,6 @@
 import React  from 'react';
 import Latex  from 'react-latex';
-import Format from '../utils/format';
+import LTX    from '../components/latex';
 import Layout from '../components/layout';
 
 import QuadAnswers from '../answers/quad';
@@ -53,10 +53,10 @@ const Quad = () => {
 
         <div className='row pt-4 pb-2 text-center'>
           <h3 className='col-12'>
-            Formula: <Latex>{Format('x = {-b pm sqrt(b^2 - 4ac)}/{2a}')}</Latex>
+            Formula: <LTX>{'x = {-b pm sqrt(b^2 - 4ac)}/{2a}'}</LTX>
           </h3>
           <h3 className='col-12'>
-            Answer: <Latex>{Format(`x = {${-b} pm sqrt(${Math.pow(b, 2) - (4 * a * c)})}/${2 * a}`)}</Latex>
+            Answer: <LTX>{`x = {${-b} pm sqrt(${Math.pow(b, 2) - (4 * a * c)})}/${2 * a}`}</LTX>
 
           </h3>
           <div className='col-12'>
@@ -70,7 +70,7 @@ const Quad = () => {
             <div className='modal-content'>
               <div className='modal-header'>
                 <h5 className='modal-title' id='results-label'>Quadratic formula walkthrough: more detailed results</h5>
-                <button type='button' className='close' data-dismiss='results'><span aria-hidden='true'>&times;</span></button>
+                <button type='button' className='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
               </div>
 
               <div className='modal-body text-center'>

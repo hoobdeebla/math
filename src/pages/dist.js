@@ -1,6 +1,6 @@
 import React  from 'react';
-import Latex  from 'react-latex';
 import Round  from '../utils/round';
+import LTX    from '../components/latex';
 import Layout from '../components/layout';
 
 import DistAnswers from '../answers/dist';
@@ -74,8 +74,8 @@ const Distancer = () => {
           <div className='modal-dialog'>
             <div className='modal-content'>
               <div className='modal-header'>
-                <h5 className='modal-title' id='results-label'>More detailed results | points: <Latex>{`$(${X1}, ${Y1})$`}</Latex>, <Latex>{`$(${X2}, ${Y2})$`}</Latex></h5>
-                <button type='button' className='close' data-dismiss='results'><span aria-hidden='true'>&times;</span></button>
+                <h5 className='modal-title' id='results-label'>More detailed results | points: <LTX>{`$(${X1}, ${Y1})$`}</LTX>, <LTX>{`$(${X2}, ${Y2})$`}</LTX></h5>
+                <button type='button' className='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
               </div>
 
               <div className='modal-body text-center'>
