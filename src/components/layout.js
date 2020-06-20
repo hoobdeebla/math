@@ -8,7 +8,7 @@ import NavLink from '../components/nav-link';
 const Layout = ({ children, title }) => {
   const Title = title || null;
   return (
-    <div>
+    <>
       <SEO title={Title} />
       <header className='navbar navbar-expand-md navbar-dark bg-dark p-2 p-md-0 mb-3 sticky-top'>
         <div className='container'>
@@ -27,18 +27,22 @@ const Layout = ({ children, title }) => {
           </button>
         </div>
       </header>
+
       <div className='container'>
         <div className='row'>
-          <div className='col-12'>{children}</div>
+          <div className='col'>{children}</div>
         </div>
       </div>
-      <p className='text-right fixed-bottom px-3'>
-        Created by&nbsp;
-        <a className='text-reset' href='https://github.com/hoobdeebla'>@hoobdeebla</a>
-        &nbsp;and&nbsp;
-        <a className='text-reset' href='https://github.com/matttt'>@matttt</a>
-      </p>
-    </div>
+
+      <footer className='mt-3 float-right'>
+        <p className='mr-0 px-2 py-1 bg-dark'>
+          Created by&nbsp;
+          <a className='text-reset' href='https://github.com/hoobdeebla'>@hoobdeebla</a>
+          &nbsp;and&nbsp;
+          <a className='text-reset' href='https://github.com/matttt'>@matttt</a>
+        </p>
+      </footer>
+    </>
   );
 };
 
