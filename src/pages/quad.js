@@ -19,7 +19,7 @@ const Quad = () => {
       <div className='container rounded-lg text-dark' style={{ background: 'url("/images/pw_maze_white.png")' }}>
         <div className='row pt-2'>
           <h1 className='col-12'>{title}</h1>
-          <h2 className='col-12'><Latex>Enter $a, b,$ and $c$ for $ax^2 + bx + c = 0$</Latex></h2>
+          <h2 className='col-12'><Latex>Enter $a$, $b$, and $c$ for $ax^2 + bx + c = 0$</Latex></h2>
         </div>
 
 
@@ -45,19 +45,18 @@ const Quad = () => {
         </div>
 
         <div className='row'>
-          <div className='col-12 text-center'>
+          <div className='col'>
             <button type='button' className='btn btn-lg btn-light m-3' data-toggle='modal' data-target='#results'>View more detailed results</button>
           </div>
         </div>
 
 
-        <div className='row pt-4 pb-2 text-center'>
+        <div className='row pt-4 pb-2'>
           <h3 className='col-12'>
             Formula: <LTX>{'x = {-b pm sqrt(b^2 - 4ac)}/{2a}'}</LTX>
           </h3>
           <h3 className='col-12'>
             Answer: <LTX>{`x = {${-b} pm sqrt(${Math.pow(b, 2) - (4 * a * c)})}/${2 * a}`}</LTX>
-
           </h3>
           <div className='col-12'>
             <button type='button' className='btn btn-lg btn-light m-3' data-toggle='modal' data-target='#results'>View more detailed results</button>
@@ -73,7 +72,7 @@ const Quad = () => {
                 <button type='button' className='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
               </div>
 
-              <div className='modal-body text-center'>
+              <div className='modal-body'>
                 <QuadAnswers className='container-fluid' a={Number(a)} b={Number(b)} c={Number(c)} />
               </div>
 

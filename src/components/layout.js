@@ -10,7 +10,7 @@ const Layout = ({ children, title }) => {
   return (
     <>
       <SEO title={Title} />
-      <header className='navbar navbar-expand-md navbar-dark bg-dark p-2 p-md-0 mb-3 sticky-top'>
+      <header className='navbar navbar-expand-lg navbar-dark bg-dark p-2 p-lg-0 mb-3 sticky-top'>
         <div className='container'>
           <Link to='/' className='navbar-brand mb-0 h1'>Math Toolbelt</Link>
           <div className='float-md-right'>
@@ -28,7 +28,7 @@ const Layout = ({ children, title }) => {
         </div>
       </header>
 
-      <div className='container'>
+      <div className='container text-center'>
         <div className='row'>
           <div className='col'>{children}</div>
         </div>

@@ -57,7 +57,7 @@ const Distancer = () => {
         </div>
 
 
-        <div className='row pt-4 pb-2 text-center'>
+        <div className='row pt-4 pb-2'>
           <h3 className='col-12'>
             Points: {`(${X1}, ${Y1}), (${X2}, ${Y2})`}
           </h3>
@@ -78,7 +78,7 @@ const Distancer = () => {
                 <button type='button' className='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
               </div>
 
-              <div className='modal-body text-center'>
+              <div className='modal-body'>
                 <DistAnswers X1={Number(X1)} Y1={Number(Y1)} X2={Number(X2)} Y2={Number(Y2)} />
               </div>
 

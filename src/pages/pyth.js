@@ -53,7 +53,7 @@ const Pyth = () => {
         </div>
 
         <div className='row'>
-          <div className='col-12 text-center'>
+          <div className='col'>
             <button type='button' className='btn btn-light btn-lg m-3' onClick={Calculate}>Calculate</button>
           </div>
         </div>
