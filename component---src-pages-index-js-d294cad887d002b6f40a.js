@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{RXBc:function(e,t,n){"use strict";n.r(t);var o=n("q1tI"),a=n.n(o),c=n("Bl7J");t.default=function(){return a.a.createElement(c.a,{title:"Home"},a.a.createElement("h1",null,"Choose a tool to get started!"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-d294cad887d002b6f40a.js.map
