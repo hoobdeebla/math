@@ -2,9 +2,9 @@ import React     from 'react';
 import PropTypes from 'prop-types';
 import Helmet    from 'react-helmet';
 
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, withPrefix } from 'gatsby';
 
-function SEO ({ description, lang, meta, title }) {
+const SEO = ({ lang, meta, title, description }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,13 +19,13 @@ function SEO ({ description, lang, meta, title }) {
     `,
   );
 
+  const metaArray       = meta        || [];
   const metaDescription = description || site.siteMetadata.description;
-
 
   return (
     <Helmet
       htmlAttributes={{ lang }}
-      bodyAttributes={{ class: 'bg-dark text-light' }}
+      style={[{ cssText: `body { background: url('${withPrefix('/images/escheresque_ste.png')}') }` }]}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       defaultTitle={site.siteMetadata.title}
@@ -62,22 +62,18 @@ function SEO ({ description, lang, meta, title }) {
           name   : 'twitter:description',
           content: metaDescription,
         },
-      ].concat(meta)}
+      ].concat(metaArray)}
     />
   );
-}
-
-SEO.defaultProps = {
-  lang       : 'en',
-  meta       : [],
-  description: '',
 };
 
+SEO.defaultProps = { lang: 'en' };
+
 SEO.propTypes = {
-  description: PropTypes.string,
-  lang       : PropTypes.string,
+  lang       : PropTypes.string.isRequired,
   meta       : PropTypes.arrayOf(PropTypes.object),
   title      : PropTypes.string,
+  description: PropTypes.string,
 };
 
 export default SEO;

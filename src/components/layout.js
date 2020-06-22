@@ -5,8 +5,13 @@ import { Link }  from 'gatsby';
 import SEO     from '../components/seo';
 import NavLink from '../components/nav-link';
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, image }) => {
+  const classes = 'container rounded-lg';
+
+  const Class = image ? classes + ' text-dark' : classes + ' text-light';
+  const Style = image ? { background: `url('${image}')` } : null;
   const Title = title || null;
+
   return (
     <>
       <SEO title={Title} />
@@ -30,12 +35,16 @@ const Layout = ({ children, title }) => {
 
       <div className='container text-center'>
         <div className='row'>
-          <div className='col'>{children}</div>
+          <div className='col'>
+            <div className={Class} style={Style}>
+              {children}
+            </div>
+          </div>
         </div>
       </div>
 
       <footer className='mt-3 float-right'>
-        <p className='mr-0 px-2 py-1 bg-dark'>
+        <p className='mr-0 px-2 py-1 bg-dark text-light'>
           Created by&nbsp;
           <a className='text-reset' href='https://github.com/hoobdeebla'>@hoobdeebla</a>
           &nbsp;and&nbsp;
@@ -47,8 +56,9 @@ const Layout = ({ children, title }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.node.isRequired,
   title   : PropTypes.string,
+  image   : PropTypes.string,
 };
 
 export default Layout;

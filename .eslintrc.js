@@ -9,4 +9,5 @@ module.exports = {
     'no-multiple-empty-lines'        : ['error', { max: 2, maxEOF: 0 }],
     'react/jsx-props-no-multi-spaces': 'off',
   },
+  ignorePatterns: ['.cache', 'public'],
 };

@@ -7,6 +7,12 @@
     "Matthew Martori (https://github.com/matttt)"
   ],
   "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "eslint --fix .",
+    "start": "npm run develop",
+    "serve": "gatsby serve --prefix-paths",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'Publish (auto-generated)'"
   },
   "dependencies": {
