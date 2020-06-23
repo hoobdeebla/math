@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import { withPrefix } from 'gatsby';
 
 const title = 'Carbon Counts';
+const desc  = 'Info about car trips and daily commutes';
 const image = withPrefix('/images/45_degree_fabric.png');
 
 const CarbonCounts = () => {
@@ -13,10 +14,10 @@ const CarbonCounts = () => {
   const [mpg,   setMPG]   = React.useState(25);
 
   return (
-    <Layout title={title} image={image}>
+    <Layout title={title} desc={desc} image={image}>
       <div className='row pt-2'>
         <h1 className='col-12'>{title}</h1>
-        <h2 className='col-12'>Info about car trips and daily commutes</h2>
+        <h2 className='col-12'>{desc}</h2>
       </div>
 
       <div className='row pt-4 d-md-none d-xl-flex'> {/* three equal-width, well-spaced inputs for small and desktop screens */}

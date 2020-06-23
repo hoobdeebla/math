@@ -5,6 +5,7 @@ import { withPrefix } from 'gatsby';
 import FracAnswers    from '../answers/frac';
 
 const title = 'Fraction Multitool';
+const desc  = 'Generalization of fraction operations';
 const image = withPrefix('/images/cream_pixels.png');
 
 const Frac = () => {
@@ -18,10 +19,10 @@ const Frac = () => {
   const select = (e) => setSelected(e.target.value);
 
   return (
-    <Layout title={title} image={image}>
+    <Layout title={title} desc={desc} image={image}>
       <div className='row pt-4'>
         <h1 className='col-12'>{title}</h1>
-        <h2 className='col-12'>Generalization of fraction operations</h2>
+        <h2 className='col-12'>{desc}</h2>
       </div>
 
 

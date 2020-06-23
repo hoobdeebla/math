@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import { withPrefix } from 'gatsby';
 
 const title = 'Pythagorifier';
+const desc  = 'Calculate the missing side of a right triangle';
 const image = withPrefix('/images/wave_grid.png');
 
 const Pyth = () => {
@@ -26,7 +27,7 @@ const Pyth = () => {
   };
 
   return (
-    <Layout title={title} image={image}>
+    <Layout title={title} desc={desc} image={image}>
       <div className='row pt-2'>
         <h1 className='col-12'>{title}</h1>
         <h2 className='col-12'>Press the button to calculate the missing side</h2>

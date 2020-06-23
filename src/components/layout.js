@@ -5,16 +5,15 @@ import { Link }  from 'gatsby';
 import SEO     from '../components/seo';
 import NavLink from '../components/nav-link';
 
-const Layout = ({ children, title, image }) => {
+const Layout = ({ children, title, desc, image }) => {
   const classes = 'container rounded-lg';
 
   const Class = image ? classes + ' text-dark' : classes + ' text-light';
   const Style = image ? { background: `url('${image}')` } : null;
-  const Title = title || null;
 
   return (
     <>
-      <SEO title={Title} />
+      <SEO title={title} desc={desc} />
       <header className='navbar navbar-expand-lg navbar-dark bg-dark p-2 p-lg-0 mb-3 sticky-top'>
         <div className='container'>
           <Link to='/' className='navbar-brand mb-0 h1'>Math Toolbelt</Link>
@@ -58,6 +57,7 @@ const Layout = ({ children, title, image }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   title   : PropTypes.string,
+  desc    : PropTypes.string,
   image   : PropTypes.string,
 };
 

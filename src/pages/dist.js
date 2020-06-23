@@ -7,6 +7,7 @@ import { withPrefix } from 'gatsby';
 import DistAnswers    from '../answers/dist';
 
 const title = 'Distancer';
+const desc  = 'Find the distance between two points as the crow flies';
 const image = withPrefix('/images/squairy_light.png');
 
 const Distancer = () => {
@@ -17,10 +18,10 @@ const Distancer = () => {
   const [Y2, setY2] = React.useState('');
 
   return (
-    <Layout title={title} image={image}>
+    <Layout title={title} desc={desc} image={image}>
       <div className='row pt-2'>
         <h1 className='col-12'>{title}</h1>
-        <h2 className='col-12'>Find the distance between two points &ldquo;as the crow flies&rdquo;</h2>
+        <h2 className='col-12'>{desc}</h2>
       </div>
 
 

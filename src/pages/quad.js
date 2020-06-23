@@ -7,6 +7,7 @@ import { withPrefix } from 'gatsby';
 import QuadAnswers    from '../answers/quad';
 
 const title = 'Quadrifier';
+const desc  = 'Quadratic formula helper';
 const image = withPrefix('/images/pw_maze_white.png');
 
 const Quad = () => {
@@ -15,7 +16,7 @@ const Quad = () => {
   const [c, setC] = React.useState('');
 
   return (
-    <Layout title={title} image={image}>
+    <Layout title={title} desc={desc} image={image}>
       <div className='row pt-2'>
         <h1 className='col-12'>{title}</h1>
         <h2 className='col-12'><Latex>Enter $a$, $b$, and $c$ for $ax^2 + bx + c = 0$</Latex></h2>
