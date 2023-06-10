@@ -18,7 +18,7 @@
   "dependencies": {
     "asciimath2tex": "^1.1.0",
     "bootstrap": "^4.5.0",
-    "gatsby": "^2.23.20",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-manifest": "^2.4.17",
     "gatsby-plugin-offline": "^3.2.16",
     "gatsby-plugin-react-helmet": "^3.3.9",
